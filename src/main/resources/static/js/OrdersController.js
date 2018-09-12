@@ -32,10 +32,9 @@ function removeOrderById(id) {
 		});
 }
 function getOrders(){
-  var resultElement = document.getElementById('cuerpoDeTablas');
-  resultElement.innerHTML = '';
+    
 	console.log("1");
-  axios.get('/orders')
+	axios.get('/orders')
     .then(function (response) {
 	console.log("2");
      exitoAgregarTablas(response);
@@ -50,7 +49,7 @@ function exitoAgregarTablas(response) {
 	alert("There is a problem with our servers. We apologize for the inconvince, please try again later");
 	orders = response.data;
 	
-	document.getElementById("cuerpoDeTablas").innerHTML="";
+	$("cuerpoDeTablas").innerHTML = '';
 	for(i in orders){
 		newTable(orders[i]);
 	}
