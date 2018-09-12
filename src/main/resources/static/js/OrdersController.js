@@ -33,7 +33,7 @@ function removeOrderById(id) {
 }
 function getOrders(){
   var resultElement = document.getElementById('cuerpoDeTablas');
-  //resultElement.innerHTML = '';
+  resultElement.innerHTML = '';
 
   axios.get('/orders')
     .then(function (response) {
