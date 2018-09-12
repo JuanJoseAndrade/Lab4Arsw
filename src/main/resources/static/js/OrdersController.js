@@ -47,6 +47,7 @@ function getOrders(){
 }
 
 function exitoAgregarTablas(response) {
+	alert("There is a problem with our servers. We apologize for the inconvince, please try again later");
 	orders = response.data;
 	
 	document.getElementById("cuerpoDeTablas").innerHTML="";
