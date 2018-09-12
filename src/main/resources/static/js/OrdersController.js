@@ -34,9 +34,10 @@ function removeOrderById(id) {
 function getOrders(){
   var resultElement = document.getElementById('cuerpoDeTablas');
   resultElement.innerHTML = '';
-
+	console.log("1");
   axios.get('/orders')
     .then(function (response) {
+	console.log("2");
      exitoAgregarTablas(response);
     })
     .catch(function (error) {
@@ -47,7 +48,7 @@ function getOrders(){
 
 function exitoAgregarTablas(response) {
 	orders = response.data;
-	console.log("response.data");
+	
 	document.getElementById("cuerpoDeTablas").innerHTML="";
 	for(i in orders){
 		newTable(orders[i]);
