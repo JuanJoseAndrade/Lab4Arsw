@@ -18,6 +18,7 @@ function newTable(order) {
 		nuevaTabla += '</tbody></table></div>';
 		document.getElementById("cuerpoDeTablas").innerHTML+=nuevaTabla;
 	}
+	console.log(nuevaTabla);
 	
 }
 
