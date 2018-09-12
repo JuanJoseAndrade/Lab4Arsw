@@ -47,7 +47,7 @@ function getOrders(){
 
 function exitoAgregarTablas(response) {
 	orders = response.data;
-	console.log(response.data);
+	console.log("response.data");
 	document.getElementById("cuerpoDeTablas").innerHTML="";
 	for(i in orders){
 		newTable(orders[i]);
