@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://getbootstrap.com/docs/4.0/examples/cover/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title> ARSW LAB 4</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./Cover_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./Cover_files/cover.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+	
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Restaurant App Arsw</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" >Orders</a>
+            <a class="nav-link" >New Order</a>
+          </nav>
+        </div>
+      </header>
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+         
+
+          <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" width="658" height="277" style="display: block; width: 658px; height: 277px;"></canvas>
+		  <input id="LoadOrders" type="button" value="LoadOrders" onclick="getOrders();" />
+		  <input id="Eliminar" type="button" value=" Delete table ↓" onclick="removeOrderById(orderId.value);" />
+		  <input type="number" id="orderId">
+          <h2>ORDERS </h2>
+          <div id="cuerpoDeTablas">
+          </div>
+		
+        </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Cover template for ARSW</a>, by JuanJo</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+	<script src="OrdersController.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Cover_files/jquery-3.2.1.slim.min.js.descarga" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./Cover_files/popper.min.js.descarga"></script>
+    <script src="./Cover_files/bootstrap.min.js.descarga"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  
+
+</body></html>
