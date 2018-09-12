@@ -16,8 +16,10 @@ function newTable(order) {
 			nuevaTabla += '</tr>';
 		}
 		nuevaTabla += '</tbody></table></div>';
-		document.getElementById("cuerpoDeTablas").innerHTML+=nuevaTabla;
+		console.log("3");
 		console.log(nuevaTabla);
+		document.getElementById("cuerpoDeTablas").innerHTML+=nuevaTabla;
+		
 	}
 	
 	
