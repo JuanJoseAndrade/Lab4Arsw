@@ -1,9 +1,9 @@
 
 function newTable(order) {
 	console.log("2.5");
-	console.log(order.orderAmountsMap.length);
+	//console.log(order.orderAmountsMap.length);
 	//Object.keys(order.orderAmountsMap).length
-	if ( order.orderAmountsMap.length>0){
+	if ( Object.keys(order.orderAmountsMap).length>0){
 		console.log("2.6");
 		var nombre="Order"+order.tableNumber;
 		var nuevaTabla='<div id='+nombre+'>';
