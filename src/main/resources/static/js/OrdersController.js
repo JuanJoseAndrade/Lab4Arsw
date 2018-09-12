@@ -4,14 +4,14 @@ function newTable(order) {
 	if (order.orderAmountsMap.length>0){
 		var nombre="Order"+order.tableNumber;
 		var nuevaTabla='<div id='+nombre+'>';
-		nuevaTabla+='<h2>Order '+order.table_id+'</h2>';
+		nuevaTabla+='<h2>Order '+nombre+'</h2>';
 		nuevaTabla+='<table class="table table-striped table-sm"> <thead> <tr> <th> Product </th> <th> Quantity </th> </tr> </thead> <tbody>';
 
 		
 		for (i in order.orderAmountsMap) {
 			nuevaTabla += '<tr>';
-			nuevaTabla += '<td>'+order.orderAmountsMap[i].product+'<td>';
-			nuevaTabla += '<td>'+order.orderAmountsMap[i].quantity+'<td>';
+			nuevaTabla += '<td>'+order.orderAmountsMap[i]+'<td>';
+			nuevaTabla += '<td>'+order.orderAmountsMap[i].data+'<td>';
 			
 			nuevaTabla += '</tr>';
 		}
