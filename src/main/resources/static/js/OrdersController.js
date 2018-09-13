@@ -26,7 +26,7 @@ function newTable(order) {
 }
 
 function removeOrderById(id) {
-	$("Order"+id).remove();
+	$("Order"+id.toString()).remove();
 }
 function getOrders(){
     
@@ -43,7 +43,6 @@ function getOrders(){
 
 function exitoAgregarTablas(response) {
 	orders = response.data;
-	console.log(orders);
 	$("cuerpoDeTablas").innerHTML = '';
 	for(i in orders){
 		newTable(orders[i]);
