@@ -13,8 +13,8 @@ function newTable(order) {
 		
 		for (i in order.orderAmountsMap) {
 			nuevaTabla += '<tr>';
+			nuevaTabla += '<td>'+i+'<td>';
 			nuevaTabla += '<td>'+order.orderAmountsMap[i]+'<td>';
-			nuevaTabla += '<td>'+order.orderAmountsMap[i].data+'<td>';
 			
 			nuevaTabla += '</tr>';
 		}
